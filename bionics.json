@@ -1,0 +1,183 @@
+[
+  {
+    "id": "omni_bionic_power",
+    "type": "bionic",
+    "name": { "str": "Omni Corp. bionic power package" },
+    "description": "The Omni Corp. Bionic Power Package is standard issue for Omni Corp. Personel. It contains a proprietary Reactor and Battery Pack.",
+    "occupied_bodyparts": [ [ "torso", 1 ], [ "arm_l", 1 ], [ "arm_r", 1 ], [ "leg_l", 1 ], [ "leg_r", 1 ] ],
+    "capacity": "100 kJ",
+	"power_trickle": "500000 J",
+    "flags": [ "BIONIC_POWER_SOURCE", "BIONIC_SHOCKPROOF", "BIONIC_NPC_USABLE" ]
+  },
+  {
+    "id": "omni_bionic_lift",
+    "type": "bionic",
+    "name": { "str": "Omni Corp. bionic lift package" },
+    "description": "The Omni Corp. Bionic Lift Package is standard issue for Omni Corp. Personel. It contains heavy duty hydraulics for the arms and legs.",
+    "weight_capacity_bonus": "500 kg",
+    "stat_bonus": [ [ "STR", 5 ], [ "DEX", 5 ] ],
+    "flags": [ "BIONIC_SHOCKPROOF", "BIONIC_NPC_USABLE" ]
+  },
+  {
+    "id": "omni_bionic_enhance",
+    "type": "bionic",
+    "name": { "str": "Omni Corp. bionic enhancement package" },
+    "description": "The Omni Corp. Bionic Enhancement Package is standard issue for Omni Corp. Personel. It contains Enhancements for every aspect of your life!",
+    "stat_bonus": [ [ "STR", 5 ], [ "DEX", 5 ], [ "INT", 5 ], [ "PER", 5 ] ],	
+	"enchantments": [
+      {
+        "condition": "ALWAYS",
+        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+      }
+    ],
+	"occupied_bodyparts": [
+      [ "torso", 6 ],
+	  [ "eyes", 2 ],
+      [ "head", 2 ],
+      [ "arm_l", 2 ],
+      [ "arm_r", 2 ],
+      [ "leg_l", 3 ],
+      [ "leg_r", 3 ],
+      [ "foot_l", 1 ],
+      [ "foot_r", 1 ],
+      [ "hand_l", 1 ],
+      [ "hand_r", 1 ],
+      [ "mouth", 1 ]
+    ],
+    "env_protec": [
+      [ "torso", 50 ],
+      [ "arm_l", 50 ],
+      [ "arm_r", 50 ],
+      [ "leg_l", 50 ],
+      [ "leg_r", 50 ],
+      [ "head", 50 ],
+      [ "eyes", 50 ],
+      [ "mouth", 50 ],
+      [ "hand_l", 50 ],
+      [ "hand_r", 50 ],
+      [ "foot_l", 50 ],
+      [ "foot_r", 50 ]
+    ],
+    "bash_protec": [
+      [ "torso", 50 ],
+      [ "arm_l", 50 ],
+      [ "arm_r", 50 ],
+      [ "leg_l", 50 ],
+      [ "leg_r", 50 ],
+      [ "head", 50 ],
+      [ "eyes", 50 ],
+      [ "mouth", 50 ],
+      [ "hand_l", 50 ],
+      [ "hand_r", 50 ],
+      [ "foot_l", 50 ],
+      [ "foot_r", 50 ]
+    ],
+    "cut_protec": [
+      [ "torso", 50 ],
+      [ "arm_l", 50 ],
+      [ "arm_r", 50 ],
+      [ "leg_l", 50 ],
+      [ "leg_r", 50 ],
+      [ "head", 50 ],
+      [ "eyes", 50 ],
+      [ "mouth", 50 ],
+      [ "hand_l", 50 ],
+      [ "hand_r", 50 ],
+      [ "foot_l", 50 ],
+      [ "foot_r", 50 ]
+    ],
+	"bullet_protect": [
+      [ "torso", 50 ],
+      [ "arm_l", 50 ],
+      [ "arm_r", 50 ],
+      [ "leg_l", 50 ],
+      [ "leg_r", 50 ],
+      [ "head", 50 ],
+      [ "eyes", 50 ],
+      [ "mouth", 50 ],
+      [ "hand_l", 50 ],
+      [ "hand_r", 50 ],
+      [ "foot_l", 50 ],
+      [ "foot_r", 50 ]
+    ],
+    "flags": [ "BIONIC_SHOCKPROOF", "BIONIC_NPC_USABLE" ],
+	"passive_pseudo_items": [ "armor_omni_bionic_enhance" ]
+  },
+  {
+    "id": "armor_omni_bionic_enhance",
+    "type": "ARMOR",
+    "category": "armor",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "symbol": ",",
+    "color": "brown",
+    "warmth": 0,
+    "environmental_protection": 50,
+    "material_thickness": 2.5,
+    "flags": [ "INTEGRATED", "UNBREAKABLE", "PERSONAL", "PADDED", "WATER_FRIENDLY", "SOFT", "NO_REPAIR", "ALLOWS_NATURAL_ATTACKS", "SEMITANGIBLE", "SUPER_FANCY" ],
+    "material": [ "omni_alloy" ],
+    "name": { "str_sp": "Omni Subdermal Bionic Enhancement" },
+    "description": "A layer of thin Omni Alloy material embedded under the skin.",
+
+    "armor": [
+      {
+        "material": [
+          { "type": "omni_alloy", "covered_by_mat": 100, "thickness": 2.5 }
+        ],
+        "covers": [ "torso", "eyes", "head", "mouth", "leg_l", "leg_r", "arm_l", "arm_r", "hand_l", "hand_r", "foot_l", "foot_r" ],
+        "coverage": 100,
+        "encumbrance": 0,
+        "cover_vitals": 100
+      }
+    ]
+  },
+  {
+    "id": "omni_bionic_power",
+	"copy-from": "bionic_general_npc_usable",
+    "type": "BIONIC_ITEM",
+    "category": "bionics",
+    "name": { "str": "Omni Corp. bionic power package CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "The Omni Corp. Bionic Power Package in a handy CBM.",
+    "price": "0 cent",
+    "weight": "3 g",
+    "volume": "1 ml",
+    "material": [ "omni_alloy" ],
+    "difficulty": 0,
+    "symbol": ":",
+    "color": "yellow"
+  },
+  {
+    "id": "omni_bionic_lift",
+	"copy-from": "bionic_general_npc_usable",
+    "type": "BIONIC_ITEM",
+    "category": "bionics",
+    "name": { "str": "Omni Corp. bionic lift package CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "The Omni Corp. Bionic Lift Package in a handy CBM.",
+    "price": "0 cent",
+    "weight": "3 g",
+    "volume": "1 ml",
+    "material": [ "omni_alloy" ],
+    "difficulty": 0,
+    "symbol": ":",
+    "color": "yellow"
+  },
+  {
+    "id": "omni_bionic_enhance",
+	"copy-from": "bionic_general_npc_usable",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Omni Corp. bionic enhance package CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "The Omni Corp. Bionic Enhancement Package in a handy CBM.",
+    "price": "0 cent",
+    "weight": "3 g",
+    "volume": "1 ml",
+    "material": [ "omni_alloy" ],
+    "difficulty": 0,
+    "symbol": ":",
+    "color": "yellow"
+  }
+]
