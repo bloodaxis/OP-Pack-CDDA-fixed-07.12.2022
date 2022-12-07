@@ -6,7 +6,7 @@
     "authors": [ "yy376" ],
     "maintainers": [ "yy376" ],
     "description": "Adds a few items from the Omni Corp.",
-    "category": "item",
+    "category": "items",
     "dependencies": [ "dda" ]
   }
 ]

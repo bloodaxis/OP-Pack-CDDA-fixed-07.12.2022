@@ -164,7 +164,10 @@
     "charges": 200,
     "autolearn": true,
     "flags": [ "BLIND_EASY" ],
-    "components": [ [ [ "water", 1 ] ], [ [ "wrapper", 1 ] ] ]
+    "components": [ [ [ "water", 1 ], [ "water_clean", 1 ] ],
+	[ [ "wrapper", 1 ] ],
+	[ [ "edible_tallow_lard", 1, "LIST" ], [ "any_butter", 5, "LIST" ] ],
+	[ [ "omni_alloy", 1 ] ] ]
   },
   {
     "result": "omni_med",
@@ -176,7 +179,67 @@
     "charges": 200,
     "autolearn": true,
     "flags": [ "BLIND_EASY" ],
-    "components": [ [ [ "water", 1 ] ] ]
+    "components": [ [ [ "water", 1 ], [ "water_clean", 1 ] ], [ [ "omni_alloy", 1 ] ] ]
+  },
+  {
+    "result": "omni_med_iron",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "fabrication",
+    "time": "0 s",
+    "charges": 200,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "water", 1 ], [ "water_clean", 1 ] ], [ [ "omni_alloy", 1 ] ] ]
+  },
+  {
+    "result": "omni_med_panacea",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "fabrication",
+    "time": "0 s",
+    "charges": 200,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "water", 1 ], [ "water_clean", 1 ] ], [ [ "omni_alloy", 1 ] ] ]
+  },
+  {
+    "result": "omni_med_painkiller",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "fabrication",
+    "time": "0 s",
+    "charges": 200,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "water", 1 ], [ "water_clean", 1 ] ], [ [ "omni_alloy", 1 ] ] ]
+  },
+  {
+    "result": "omni_med_antiradiation",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "fabrication",
+    "time": "0 s",
+    "charges": 200,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "water", 1 ], [ "water_clean", 1 ] ], [ [ "omni_alloy", 1 ] ] ]
+  },
+  {
+    "result": "omni_med_test",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "fabrication",
+    "time": "0 s",
+    "charges": 200,
+    "autolearn": true,
+    "flags": [ "BLIND_EASY" ],
+    "components": [ [ [ "water", 1 ], [ "water_clean", 1 ] ], [ [ "omni_alloy", 1 ] ] ]
   },
   {
     "type": "recipe",
